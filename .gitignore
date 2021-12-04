@@ -27,4 +27,4 @@ xcuserdata/
 
 ## Bert Model
 
-BERT\ Model/BERTQAFP16.mlmodel
+*.mlmodel

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5EBDCE8F275BD23800B350CE /* BERTQAFP16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5EBDCE8E275BD23800B350CE /* BERTQAFP16.mlmodel */; };
 		5EDE8A4F275BC053007C4DDC /* iAnswerBotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDE8A4E275BC053007C4DDC /* iAnswerBotApp.swift */; };
 		5EDE8A51275BC053007C4DDC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDE8A50275BC053007C4DDC /* ContentView.swift */; };
 		5EDE8A53275BC054007C4DDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EDE8A52275BC054007C4DDC /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5EBDCE8E275BD23800B350CE /* BERTQAFP16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = BERTQAFP16.mlmodel; sourceTree = "<group>"; };
 		5EDE8A4B275BC053007C4DDC /* iAnswerBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iAnswerBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EDE8A4E275BC053007C4DDC /* iAnswerBotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iAnswerBotApp.swift; sourceTree = "<group>"; };
 		5EDE8A50275BC053007C4DDC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				5EDE8A62275BC91F007C4DDC /* bert-base-uncased-vocab.txt */,
+				5EBDCE8E275BD23800B350CE /* BERTQAFP16.mlmodel */,
 				5EDE8A63275BC91F007C4DDC /* BERT.swift */,
 				5EDE8A65275BC91F007C4DDC /* BERTInput.swift */,
 				5EDE8A61275BC91F007C4DDC /* BERTOutput.swift */,
@@ -178,6 +181,7 @@
 				5EDE8A67275BC920007C4DDC /* TokenizedString.swift in Sources */,
 				5EDE8A6D275BC920007C4DDC /* BERTVocabulary.swift in Sources */,
 				5EDE8A6C275BC920007C4DDC /* BERTInput.swift in Sources */,
+				5EBDCE8F275BD23800B350CE /* BERTQAFP16.mlmodel in Sources */,
 				5EDE8A4F275BC053007C4DDC /* iAnswerBotApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
