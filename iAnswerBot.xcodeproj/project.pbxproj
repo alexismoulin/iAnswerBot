@@ -1,0 +1,405 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5EDE8A4F275BC053007C4DDC /* iAnswerBotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDE8A4E275BC053007C4DDC /* iAnswerBotApp.swift */; };
+		5EDE8A51275BC053007C4DDC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDE8A50275BC053007C4DDC /* ContentView.swift */; };
+		5EDE8A53275BC054007C4DDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EDE8A52275BC054007C4DDC /* Assets.xcassets */; };
+		5EDE8A56275BC054007C4DDC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EDE8A55275BC054007C4DDC /* Preview Assets.xcassets */; };
+		5EDE8A5E275BC0BB007C4DDC /* CTScanText in Frameworks */ = {isa = PBXBuildFile; productRef = 5EDE8A5D275BC0BB007C4DDC /* CTScanText */; };
+		5EDE8A67275BC920007C4DDC /* TokenizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDE8A60275BC91F007C4DDC /* TokenizedString.swift */; };
+		5EDE8A68275BC920007C4DDC /* BERTOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDE8A61275BC91F007C4DDC /* BERTOutput.swift */; };
+		5EDE8A69275BC920007C4DDC /* bert-base-uncased-vocab.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5EDE8A62275BC91F007C4DDC /* bert-base-uncased-vocab.txt */; };
+		5EDE8A6A275BC920007C4DDC /* BERT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDE8A63275BC91F007C4DDC /* BERT.swift */; };
+		5EDE8A6C275BC920007C4DDC /* BERTInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDE8A65275BC91F007C4DDC /* BERTInput.swift */; };
+		5EDE8A6D275BC920007C4DDC /* BERTVocabulary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDE8A66275BC91F007C4DDC /* BERTVocabulary.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5EDE8A4B275BC053007C4DDC /* iAnswerBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iAnswerBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EDE8A4E275BC053007C4DDC /* iAnswerBotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iAnswerBotApp.swift; sourceTree = "<group>"; };
+		5EDE8A50275BC053007C4DDC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5EDE8A52275BC054007C4DDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5EDE8A55275BC054007C4DDC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5EDE8A60275BC91F007C4DDC /* TokenizedString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenizedString.swift; sourceTree = "<group>"; };
+		5EDE8A61275BC91F007C4DDC /* BERTOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BERTOutput.swift; sourceTree = "<group>"; };
+		5EDE8A62275BC91F007C4DDC /* bert-base-uncased-vocab.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "bert-base-uncased-vocab.txt"; sourceTree = "<group>"; };
+		5EDE8A63275BC91F007C4DDC /* BERT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BERT.swift; sourceTree = "<group>"; };
+		5EDE8A65275BC91F007C4DDC /* BERTInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BERTInput.swift; sourceTree = "<group>"; };
+		5EDE8A66275BC91F007C4DDC /* BERTVocabulary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BERTVocabulary.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5EDE8A48275BC053007C4DDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EDE8A5E275BC0BB007C4DDC /* CTScanText in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5EDE8A42275BC053007C4DDC = {
+			isa = PBXGroup;
+			children = (
+				5EDE8A4D275BC053007C4DDC /* iAnswerBot */,
+				5EDE8A4C275BC053007C4DDC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5EDE8A4C275BC053007C4DDC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5EDE8A4B275BC053007C4DDC /* iAnswerBot.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5EDE8A4D275BC053007C4DDC /* iAnswerBot */ = {
+			isa = PBXGroup;
+			children = (
+				5EDE8A4E275BC053007C4DDC /* iAnswerBotApp.swift */,
+				5EDE8A5F275BC909007C4DDC /* BERT Model */,
+				5EDE8A50275BC053007C4DDC /* ContentView.swift */,
+				5EDE8A52275BC054007C4DDC /* Assets.xcassets */,
+				5EDE8A54275BC054007C4DDC /* Preview Content */,
+			);
+			path = iAnswerBot;
+			sourceTree = "<group>";
+		};
+		5EDE8A54275BC054007C4DDC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5EDE8A55275BC054007C4DDC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5EDE8A5F275BC909007C4DDC /* BERT Model */ = {
+			isa = PBXGroup;
+			children = (
+				5EDE8A62275BC91F007C4DDC /* bert-base-uncased-vocab.txt */,
+				5EDE8A63275BC91F007C4DDC /* BERT.swift */,
+				5EDE8A65275BC91F007C4DDC /* BERTInput.swift */,
+				5EDE8A61275BC91F007C4DDC /* BERTOutput.swift */,
+				5EDE8A66275BC91F007C4DDC /* BERTVocabulary.swift */,
+				5EDE8A60275BC91F007C4DDC /* TokenizedString.swift */,
+			);
+			path = "BERT Model";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5EDE8A4A275BC053007C4DDC /* iAnswerBot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EDE8A59275BC054007C4DDC /* Build configuration list for PBXNativeTarget "iAnswerBot" */;
+			buildPhases = (
+				5EDE8A47275BC053007C4DDC /* Sources */,
+				5EDE8A48275BC053007C4DDC /* Frameworks */,
+				5EDE8A49275BC053007C4DDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iAnswerBot;
+			packageProductDependencies = (
+				5EDE8A5D275BC0BB007C4DDC /* CTScanText */,
+			);
+			productName = iAnswerBot;
+			productReference = 5EDE8A4B275BC053007C4DDC /* iAnswerBot.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5EDE8A43275BC053007C4DDC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					5EDE8A4A275BC053007C4DDC = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 5EDE8A46275BC053007C4DDC /* Build configuration list for PBXProject "iAnswerBot" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5EDE8A42275BC053007C4DDC;
+			packageReferences = (
+				5EDE8A5C275BC0BB007C4DDC /* XCRemoteSwiftPackageReference "CTScanText" */,
+			);
+			productRefGroup = 5EDE8A4C275BC053007C4DDC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5EDE8A4A275BC053007C4DDC /* iAnswerBot */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5EDE8A49275BC053007C4DDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EDE8A56275BC054007C4DDC /* Preview Assets.xcassets in Resources */,
+				5EDE8A53275BC054007C4DDC /* Assets.xcassets in Resources */,
+				5EDE8A69275BC920007C4DDC /* bert-base-uncased-vocab.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5EDE8A47275BC053007C4DDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EDE8A51275BC053007C4DDC /* ContentView.swift in Sources */,
+				5EDE8A68275BC920007C4DDC /* BERTOutput.swift in Sources */,
+				5EDE8A6A275BC920007C4DDC /* BERT.swift in Sources */,
+				5EDE8A67275BC920007C4DDC /* TokenizedString.swift in Sources */,
+				5EDE8A6D275BC920007C4DDC /* BERTVocabulary.swift in Sources */,
+				5EDE8A6C275BC920007C4DDC /* BERTInput.swift in Sources */,
+				5EDE8A4F275BC053007C4DDC /* iAnswerBotApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5EDE8A57275BC054007C4DDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5EDE8A58275BC054007C4DDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5EDE8A5A275BC054007C4DDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iAnswerBot/Preview Content\"";
+				DEVELOPMENT_TEAM = R28KNM82KD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexis.iAnswerBot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5EDE8A5B275BC054007C4DDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iAnswerBot/Preview Content\"";
+				DEVELOPMENT_TEAM = R28KNM82KD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexis.iAnswerBot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5EDE8A46275BC053007C4DDC /* Build configuration list for PBXProject "iAnswerBot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EDE8A57275BC054007C4DDC /* Debug */,
+				5EDE8A58275BC054007C4DDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EDE8A59275BC054007C4DDC /* Build configuration list for PBXNativeTarget "iAnswerBot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EDE8A5A275BC054007C4DDC /* Debug */,
+				5EDE8A5B275BC054007C4DDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5EDE8A5C275BC0BB007C4DDC /* XCRemoteSwiftPackageReference "CTScanText" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/StewartLynch/CTScanText";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5EDE8A5D275BC0BB007C4DDC /* CTScanText */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5EDE8A5C275BC0BB007C4DDC /* XCRemoteSwiftPackageReference "CTScanText" */;
+			productName = CTScanText;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 5EDE8A43275BC053007C4DDC /* Project object */;
+}
