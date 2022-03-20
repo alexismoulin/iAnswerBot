@@ -7,9 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E57209627E74CD8001081C8 /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E57209527E74CD8001081C8 /* VisualEffectBlur.swift */; };
+		5E57209827E74F16001081C8 /* CardStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E57209727E74F16001081C8 /* CardStyle.swift */; };
+		5E57209B27E75216001081C8 /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E57209A27E75216001081C8 /* GradientButton.swift */; };
+		5E57209D27E75275001081C8 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E57209C27E75275001081C8 /* CustomColors.swift */; };
+		5E57209F27E752D4001081C8 /* GradientText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E57209E27E752D4001081C8 /* GradientText.swift */; };
+		5E5720A127E75341001081C8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5720A027E75341001081C8 /* HomeView.swift */; };
+		5E5720A327E753A1001081C8 /* CustomDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5720A227E753A1001081C8 /* CustomDivider.swift */; };
+		5E5720A527E753E9001081C8 /* TextfieldIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5720A427E753E9001081C8 /* TextfieldIcon.swift */; };
+		5E5720A727E758C3001081C8 /* GradientTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5720A627E758C3001081C8 /* GradientTextfield.swift */; };
 		5EBDCE8F275BD23800B350CE /* BERTQAFP16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5EBDCE8E275BD23800B350CE /* BERTQAFP16.mlmodel */; };
 		5EDE8A4F275BC053007C4DDC /* iAnswerBotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDE8A4E275BC053007C4DDC /* iAnswerBotApp.swift */; };
-		5EDE8A51275BC053007C4DDC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDE8A50275BC053007C4DDC /* ContentView.swift */; };
 		5EDE8A53275BC054007C4DDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EDE8A52275BC054007C4DDC /* Assets.xcassets */; };
 		5EDE8A56275BC054007C4DDC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EDE8A55275BC054007C4DDC /* Preview Assets.xcassets */; };
 		5EDE8A5E275BC0BB007C4DDC /* CTScanText in Frameworks */ = {isa = PBXBuildFile; productRef = 5EDE8A5D275BC0BB007C4DDC /* CTScanText */; };
@@ -22,10 +30,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5E57209527E74CD8001081C8 /* VisualEffectBlur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualEffectBlur.swift; sourceTree = "<group>"; };
+		5E57209727E74F16001081C8 /* CardStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardStyle.swift; sourceTree = "<group>"; };
+		5E57209A27E75216001081C8 /* GradientButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
+		5E57209C27E75275001081C8 /* CustomColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
+		5E57209E27E752D4001081C8 /* GradientText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientText.swift; sourceTree = "<group>"; };
+		5E5720A027E75341001081C8 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		5E5720A227E753A1001081C8 /* CustomDivider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomDivider.swift; sourceTree = "<group>"; };
+		5E5720A427E753E9001081C8 /* TextfieldIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextfieldIcon.swift; sourceTree = "<group>"; };
+		5E5720A627E758C3001081C8 /* GradientTextfield.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientTextfield.swift; sourceTree = "<group>"; };
 		5EBDCE8E275BD23800B350CE /* BERTQAFP16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = BERTQAFP16.mlmodel; sourceTree = "<group>"; };
 		5EDE8A4B275BC053007C4DDC /* iAnswerBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iAnswerBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EDE8A4E275BC053007C4DDC /* iAnswerBotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iAnswerBotApp.swift; sourceTree = "<group>"; };
-		5EDE8A50275BC053007C4DDC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5EDE8A52275BC054007C4DDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5EDE8A55275BC054007C4DDC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5EDE8A60275BC91F007C4DDC /* TokenizedString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenizedString.swift; sourceTree = "<group>"; };
@@ -48,6 +64,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E57209427E74CCA001081C8 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				5E57209C27E75275001081C8 /* CustomColors.swift */,
+				5E57209527E74CD8001081C8 /* VisualEffectBlur.swift */,
+				5E57209727E74F16001081C8 /* CardStyle.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		5E57209927E75200001081C8 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5E5720A427E753E9001081C8 /* TextfieldIcon.swift */,
+				5E5720A227E753A1001081C8 /* CustomDivider.swift */,
+				5E57209A27E75216001081C8 /* GradientButton.swift */,
+				5E57209E27E752D4001081C8 /* GradientText.swift */,
+				5E5720A627E758C3001081C8 /* GradientTextfield.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		5EDE8A42275BC053007C4DDC = {
 			isa = PBXGroup;
 			children = (
@@ -68,8 +106,10 @@
 			isa = PBXGroup;
 			children = (
 				5EDE8A4E275BC053007C4DDC /* iAnswerBotApp.swift */,
+				5E5720A027E75341001081C8 /* HomeView.swift */,
+				5E57209927E75200001081C8 /* Components */,
+				5E57209427E74CCA001081C8 /* Styles */,
 				5EDE8A5F275BC909007C4DDC /* BERT Model */,
-				5EDE8A50275BC053007C4DDC /* ContentView.swift */,
 				5EDE8A52275BC054007C4DDC /* Assets.xcassets */,
 				5EDE8A54275BC054007C4DDC /* Preview Content */,
 			);
@@ -175,14 +215,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EDE8A51275BC053007C4DDC /* ContentView.swift in Sources */,
+				5E5720A527E753E9001081C8 /* TextfieldIcon.swift in Sources */,
+				5E5720A727E758C3001081C8 /* GradientTextfield.swift in Sources */,
 				5EDE8A68275BC920007C4DDC /* BERTOutput.swift in Sources */,
 				5EDE8A6A275BC920007C4DDC /* BERT.swift in Sources */,
 				5EDE8A67275BC920007C4DDC /* TokenizedString.swift in Sources */,
+				5E57209B27E75216001081C8 /* GradientButton.swift in Sources */,
 				5EDE8A6D275BC920007C4DDC /* BERTVocabulary.swift in Sources */,
 				5EDE8A6C275BC920007C4DDC /* BERTInput.swift in Sources */,
+				5E57209627E74CD8001081C8 /* VisualEffectBlur.swift in Sources */,
+				5E57209827E74F16001081C8 /* CardStyle.swift in Sources */,
 				5EBDCE8F275BD23800B350CE /* BERTQAFP16.mlmodel in Sources */,
+				5E57209D27E75275001081C8 /* CustomColors.swift in Sources */,
+				5E57209F27E752D4001081C8 /* GradientText.swift in Sources */,
+				5E5720A127E75341001081C8 /* HomeView.swift in Sources */,
 				5EDE8A4F275BC053007C4DDC /* iAnswerBotApp.swift in Sources */,
+				5E5720A327E753A1001081C8 /* CustomDivider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
