@@ -27,7 +27,7 @@ struct HomeView: View {
                         editingTextfield: $editingTextfield,
                         textfieldString: $scanResults,
                         iconBounce: $iconBounce,
-                        textfieldPlaceholder: "Press the scan button to scan your text",
+                        textfieldPlaceholder: "Press the scan button",
                         textfieldIconString: "camera",
                         height: 200
                     )

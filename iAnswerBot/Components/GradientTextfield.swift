@@ -9,8 +9,9 @@ struct GradientTextfield: View {
     var textfieldIconString: String
     var height: CGFloat?
     private let generator = UISelectionFeedbackGenerator()
+    @FocusState private var focus: Bool
     
-    func animationPrompt(isEditing: Bool) {
+    func animateIcon(isEditing: Bool) {
         editingTextfield = isEditing
         generator.selectionChanged()
         if isEditing {
@@ -29,23 +30,16 @@ struct GradientTextfield: View {
         HStack(spacing: 12) {
             TextfieldIcon(iconName: textfieldIconString, currentlyEditing: $editingTextfield, passedImage: .constant(nil))
                 .scaleEffect(iconBounce ? 1.2 : 1)
-            TextField(textfieldPlaceholder, text: $textfieldString) { isEditing in
-                animationPrompt(isEditing: isEditing)
-//                editingTextfield = isEditing
-//                generator.selectionChanged()
-//                if isEditing {
-//                    withAnimation(.spring(response: 0.3, dampingFraction: 0.4, blendDuration: 0.5)) {
-//                        iconBounce.toggle()
-//                    }
-//                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
-//                        withAnimation(.spring(response: 0.3, dampingFraction: 0.4, blendDuration: 0.5)) {
-//                            iconBounce.toggle()
-//                        }
-//                    }
-//                }
-            }
-            .colorScheme(.dark)
-            .foregroundColor(.white.opacity(0.7))
+                .onTapGesture {
+                    focus = false
+                }
+            TextField(textfieldPlaceholder, text: $textfieldString, axis: .vertical)
+                .colorScheme(.dark)
+                .foregroundColor(.white.opacity(0.7))
+                .focused($focus)
+                .onChange(of: focus) { isEditing in
+                    animateIcon(isEditing: isEditing)
+                }
         }
         .frame(height: height)
         .overlay(
