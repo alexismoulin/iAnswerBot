@@ -1,15 +1,13 @@
 import SwiftUI
-import CTScanText
 
 struct HomeView: View {
 
-    let model = BERT()
-
     @State private var answerLabel: String = ""
-    @State private var context: String = ""
+    @State private var scanResults: String = ""
     @State private var question: String = ""
     @State private var editingTextfield: Bool = false
     @State private var iconBounce: Bool = false
+    @State private var showCameraScannerView: Bool = false
 
     var body: some View {
         ZStack {
@@ -20,16 +18,25 @@ struct HomeView: View {
 
             VStack {
                 VStack(alignment: .leading, spacing: 16) {
-                    // Text scanner
+                    // MARK: - Text Scanner Section
                     Text("Text Scanner")
                         .foregroundColor(.white)
                         .font(.title2.bold())
-                    ScanTextEditor("Scan your text here", text: $context, backgroundColor: UIColor(.textfield), borderColor: .white, borderWidth: 3, cornerRadius: 16)
-                        .frame(height: 300)
+
+                    GradientTextfield(
+                        editingTextfield: $editingTextfield,
+                        textfieldString: $scanResults,
+                        iconBounce: $iconBounce,
+                        textfieldPlaceholder: "Press the scan button to scan your text",
+                        textfieldIconString: "camera",
+                        height: 200
+                    )
+                    
+                    GradientButton(buttonTitle: "Scan") { showCameraScannerView.toggle() }
 
                     CustomDivider()
 
-                    // Question textfield
+                    // MARK: - Question Section
                     Text("Ask your question")
                         .foregroundColor(.white)
                         .font(.title2.bold())
@@ -38,20 +45,12 @@ struct HomeView: View {
 
                     CustomDivider()
 
-                    // Question textfield
+                    // MARK: - Answer Section
                     Text("Get your answer")
                         .foregroundColor(.white)
                         .font(.title2.bold())
 
-                    GradientButton(buttonTitle: "Answer") {
-                        DispatchQueue.global(qos: .userInitiated).async {
-                            let answer = self.model.findAnswer(for: self.question, in: self.context)
-                            self.answerLabel = String(answer)
-                            print(context)
-                            print(question)
-                            print(answer)
-                        }
-                    }
+                    GradientButton(buttonTitle: "Answer") { }
 
                     Text(answerLabel)
                         .font(.title)
@@ -61,12 +60,13 @@ struct HomeView: View {
 
             }
             .cardStyle()
-
+            
+            // MARK: - DELETE BUTTON
             VStack {
                 Spacer()
                 Button {
                     answerLabel = ""
-                    context = ""
+                    scanResults = ""
                     question = ""
                 } label: {
                     Image(systemName: "trash")
@@ -85,8 +85,15 @@ struct HomeView: View {
                 }
 
             }.padding(.bottom, 44)
+            
         }
         .preferredColorScheme(.dark)
+        .sheet(isPresented: $showCameraScannerView) {
+                   CameraScanner(
+                    startScanning: $showCameraScannerView,
+                    scanResult: $scanResults
+                   )
+               }
 
     }
 
